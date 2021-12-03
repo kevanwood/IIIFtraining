@@ -1,0 +1,103 @@
+{
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
+  "@id" : "https://kevanwood.github.io/IIIFtraining/manifests/kevs3.json",
+  "@type" : "sc:Manifest",
+  "label" : "Pictures",
+  "metadata" : [ ],
+  "description" : [ {
+    "@value" : "[Click to edit description]",
+    "@language" : "en"
+  } ],
+  "license" : "https://creativecommons.org/licenses/by/3.0/",
+  "attribution" : "[Click to edit attribution]",
+  "sequences" : [ {
+    "@id" : "http://b3d21844-f8ab-4858-b8e1-abe90f353368",
+    "@type" : "sc:Sequence",
+    "label" : [ {
+      "@value" : "Normal Sequence",
+      "@language" : "en"
+    } ],
+    "canvases" : [ {
+      "@id" : "http://91e44837-f87a-4c48-80a7-8fcc4c13796f",
+      "@type" : "sc:Canvas",
+      "label" : "Dog",
+      "height" : 4275,
+      "width" : 4941,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://8d1e92da-cd71-44e0-89c7-cfff92bc1ad5",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://images.collections.yale.edu/iiif/2/ycba:9e08d901-a26b-4acb-a768-28f90a062adf/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://images.collections.yale.edu/iiif/2/ycba:9e08d901-a26b-4acb-a768-28f90a062adf",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
+              "formats" : [ "jpg", "tif", "gif", "png" ],
+              "qualities" : [ "bitonal", "default", "gray", "color" ],
+              "supports" : [ "regionByPx", "sizeByW", "sizeByWhListed", "cors", "regionSquare", "sizeByDistortedWh", "sizeAboveFull", "canonicalLinkHeader", "sizeByConfinedWh", "sizeByPct", "jsonldMediaType", "regionByPct", "rotationArbitrary", "sizeByH", "baseUriRedirect", "rotationBy90s", "profileLinkHeader", "sizeByForcedWh", "sizeByWh", "mirroring" ]
+            } ]
+          },
+          "height" : 4275,
+          "width" : 4941
+        },
+        "on" : "http://91e44837-f87a-4c48-80a7-8fcc4c13796f"
+      } ],
+      "otherContent" : [ {
+        "@id" : "http://127.0.0.1:8887/annotations1.json",
+        "@type" : "sc:AnnotationList",
+        "label" : "My fantastic annotations"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://f36fbb0b-f8b9-45af-8635-141e35e347a1",
+      "@type" : "sc:Canvas",
+      "label" : "Book",
+      "height" : 601,
+      "width" : 947,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://334991d2-cfe9-4d5c-ac80-742ce30d6afc",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://free.iiifhosting.com/iiif/f9a02a80bf76333f50ffcf0f0c17aa58f9ebf6a1510c9801bde50f565ac0a936/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://free.iiifhosting.com/iiif/f9a02a80bf76333f50ffcf0f0c17aa58f9ebf6a1510c9801bde50f565ac0a936",
+            "profile" : [ "http://iiif.io/api/image/2/level1.json", {
+              "formats" : [ "jpg" ],
+              "qualities" : [ "native", "color", "gray" ],
+              "supports" : [ "regionByPct", "regionSquare", "sizeByForcedWh", "sizeByWh", "sizeAboveFull", "rotationBy90s", "mirroring" ]
+            } ]
+          },
+          "height" : 601,
+          "width" : 947
+        },
+        "on" : "http://f36fbb0b-f8b9-45af-8635-141e35e347a1"
+      } ],
+      "related" : ""
+    } ]
+  } ],
+  "structures" : [ {
+    "@id" : "http://example.org/iiif/book1/range/r0",
+    "@type" : "sc:Range",
+    "label" : "Table of Contents",
+    "members" : [ {
+      "@id" : "http://example.org/iiif/book1/range/r1",
+      "@type" : "sc:Range",
+      "label" : "Dog",
+      "canvases" : [ "http://91e44837-f87a-4c48-80a7-8fcc4c13796f" ]
+    }, {
+      "@id" : "http://example.org/iiif/book1/range/r2",
+      "@type" : "sc:Range",
+      "label" : "Book",
+      "canvases" : [ "http://f36fbb0b-f8b9-45af-8635-141e35e347a1" ]
+    } ]
+  } ]
+}
